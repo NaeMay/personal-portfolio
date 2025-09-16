@@ -20,7 +20,7 @@ body {
   background-image: url(https://cdn.pixabay.com/photo/2016/11/29/09/16/architecture-1868667_1280.jpg);
   background-size: cover;
   background-attachment: fixed;
-  overflow-y: auto; /* Ensure body scrolls */
+  overflow-y: auto;
 }
 
 #navbar {
@@ -53,24 +53,32 @@ body {
 }
 
 #welcome-section {
-  min-height: 100vh; /* Changed from height to min-height */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.95); /* Increased opacity */
+  background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 2px solid var(--maga-red);
   text-align: center;
-  padding: 80px 20px 20px 20px; /* Added padding-top for navbar */
+  padding: 80px 20px 20px 20px;
   max-width: 800px;
   margin: 0 auto;
-  overflow-y: auto; /* Enable scrolling if content overflows */
+  overflow-y: auto;
 }
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between logos */
+  margin-bottom: 20px; /* Space below logos */
+}
+
 .logo {
-  max-width: 150px; /* Adjust this value to make logos smaller (e.g., 100px, 200px) */
-  height: auto; /* Maintain aspect ratio */
-  margin: 10px auto; /* Center logos and add spacing */
-  display: block; /* Ensure logos are centered */
+  max-width: 150px;
+  height: auto;
+  display: block;
 }
 
 #welcome-section h1 {
@@ -93,7 +101,7 @@ body {
   max-width: 600px;
   margin: 10px auto;
   font-size: 1.1em;
-  background-color: rgba(255, 255, 255, 0.95); /* Increased opacity */
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 10px;
   border-radius: 5px;
 }
@@ -303,7 +311,7 @@ body {
     max-width: 300px;
   }
   #welcome-section {
-    padding: 60px 10px 10px 10px; /* Adjusted for mobile */
+    padding: 60px 10px 10px 10px;
   }
   #welcome-section h1 {
     font-size: 1.8em;
@@ -333,6 +341,10 @@ body {
     max-width: 300px;
     justify-content: center;
   }
+  .logo-container {
+    flex-direction: column; /* Stack logos on small screens */
+    gap: 10px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -342,6 +354,4 @@ body {
   .project-tile h3 {
     font-size: 1.2em;
   }
-
 }
-
