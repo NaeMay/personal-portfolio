@@ -336,4 +336,11 @@ body {
   .project-tile h3 {
     font-size: 1.2em;
   }
+
+}
+.logo {
+  max-width: 150px; /* Adjust this value to make logos smaller (e.g., 100px, 200px) */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px auto; /* Center logos and add spacing */
+  display: block; /* Ensure logos are centered */
 }
