@@ -66,6 +66,12 @@ body {
   margin: 0 auto;
   overflow-y: auto; /* Enable scrolling if content overflows */
 }
+.logo {
+  max-width: 150px; /* Adjust this value to make logos smaller (e.g., 100px, 200px) */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px auto; /* Center logos and add spacing */
+  display: block; /* Ensure logos are centered */
+}
 
 #welcome-section h1 {
   font-size: 2.5em;
@@ -338,9 +344,4 @@ body {
   }
 
 }
-.logo {
-  max-width: 150px; /* Adjust this value to make logos smaller (e.g., 100px, 200px) */
-  height: auto; /* Maintain aspect ratio */
-  margin: 10px auto; /* Center logos and add spacing */
-  display: block; /* Ensure logos are centered */
-}
+
